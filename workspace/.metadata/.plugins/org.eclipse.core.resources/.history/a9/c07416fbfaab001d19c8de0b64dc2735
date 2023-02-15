@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Quiz01 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("1~10 사이의 정수 입력");
+		int userValue= input.nextInt();
+		int fac =1;
+			if(userValue>11) {
+				System.out.println("1~10 사이의 정수 입력");
+				userValue=input.nextInt();		
+			}
+			else {	
+				for(int i =1; i<=userValue; i++) 
+					fac =fac*i;
+			}				
+			System.out.println(userValue + "!  :" + fac );
+			}
+}
+
+/**
+ * 답변: 
+ * - 문제의 구조를 if형으로 생각 ture라고 생각 될시에 계산을 만들어 출력하려고 했음
+ * 오류 
+ * 	정수값 설정을 하지 않았음, do if문으로 먼저 실행되는 코드를 설정하는 것이 미흡함.
+ * 결론 
+ * 	코드 구조를 변경하여 만듬
+ *  

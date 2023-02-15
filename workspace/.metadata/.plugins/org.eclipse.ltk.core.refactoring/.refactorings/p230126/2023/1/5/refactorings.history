@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;ArrayEx01_3.java&apos; to &apos;p230131/src/(default package)&apos;&#x0D;&#x0A;- Original project: &apos;p230126&apos;&#x0D;&#x0A;- Destination element: &apos;p230131/src/(default package)&apos;&#x0D;&#x0A;- Original element: &apos;ArrayEx01_3.java&apos;" description="Copy compilation unit" destination="=p230131/src&lt;" element1="/src&lt;{ArrayEx01_3.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1675145490162" units="1" version="1.0"/>
+</session>

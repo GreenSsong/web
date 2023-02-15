@@ -1,0 +1,13 @@
+
+public class whileQuiz04 {
+
+	public static void main(String[] args) {
+
+		
+		// 1-10까지 사이의 정수 1개 입력 랜덤으로 맞추는 것 
+		// 출력값은 옆으로
+		// 몇번 수에서 실행하여 값을 찾는 것
+		
+	}
+
+}

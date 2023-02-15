@@ -1,0 +1,59 @@
+/**
+ * @polynorhism
+ * 다형성
+ * 1. 부모의 참조변수로 자식 객체를 찾아가는 것 (가르키다)
+ * 
+ * 
+ * ========================================================
+ * 
+ * 2.
+ * 
+ */
+
+class Parent{
+	private int money = 100_000_000;
+	public void spend(int money) {
+		this.money -= money;
+		System.out.println("남은 돈" + this.money + "입니다");
+	}
+	public void working() {
+		System.out.println("부모님은 일하는중");
+	}
+	
+}
+
+class Son extends Parent{
+	public void play( ) {
+		System.out.println("slay~~");
+	}
+	@Override
+	public void spend(int money) {
+		// TODO Auto-generated method stub
+		super.spend(money);
+	}
+}
+
+class Dughter extends Parent{
+	public void study() {
+		System.out.println("study~~");
+	}
+}
+public class PolymorhismEx01 {
+
+	public static void main(String[] args) {
+		
+		Parent p = new Parent();
+		
+		Parent p2 = new Son();
+//		p2.play(); 불가함
+		
+		Parent p3 = new Dughter();
+		
+		
+		Son s = new Son();
+		s.spend(1_000_000);
+		
+		
+	}
+
+}

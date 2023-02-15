@@ -1,0 +1,33 @@
+class Super{
+	//field : 멤버 변수 - instance field, class(static) field
+	private int numOne;
+		int numTwo;
+	//method : 멤버 메서드 instance method, class(static) method
+		void showOne() { //선언부
+		System.out.println("showOne");
+	}
+	public void showTwo() {
+		System.out.println("showTwo");
+	}
+}
+class Sub extends Super{
+		// method overriding
+	void showOne() { 
+		System.out.println("  ");
+		System.out.println("overriding");
+		System.out.println("++++");
+	}
+}
+public class AccessEx02 {
+	
+	public static void main(String[] args) {
+		
+		Sub s = new Sub();
+		s.showOne();
+		
+		
+		
+		
+	}
+
+}

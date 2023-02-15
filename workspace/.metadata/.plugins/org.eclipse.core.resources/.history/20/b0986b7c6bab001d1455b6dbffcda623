@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Quiz02 {
+
+	public static void main(String[] args) {
+		int count =0;
+		Scanner input = new Scanner(System.in);
+			System.out.println("1 ~ 10까지 정수를 입력해주세요~");
+		
+		int userN = input.nextInt();
+		int num =(int)(Math.random()*10+1);
+		
+		while (num!=userN) {
+			if(num > userN) {
+				System.out.println("컴퓨터의 숫자가 더 높아요");
+			}
+			else(num<userN) {
+				System.out.println("컴퓨터의 숫자가 더 낮아요");
+			}
+			userN = input.nextInt();
+			count++;
+			if(num==userN) {
+				System.out.println("정답 : " + count + "회 만에 맞췄습니다.");
+			}
+		}
+	}
+}

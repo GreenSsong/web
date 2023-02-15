@@ -1,0 +1,13 @@
+
+public class TestEx01 {
+
+	public static void main(String[] args) {
+
+		int i=1,sum=0;
+		while(i<=10) {
+		sum+=i;
+		        i++;}
+		System.out.println("1부터 10까지 합은>>>"+sum);
+	}
+
+}
